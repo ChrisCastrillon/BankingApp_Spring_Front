@@ -1,0 +1,34 @@
+.form-group {
+
+}
+#submitButton {
+
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgba(243, 240, 255, 1);
+}
+#submitButton:hover {
+    background-color: rgb(215, 211, 226);
+}
+.form-control {
+    border:none;
+    background-color: rgba(243, 240, 255, 0);
+}
+.loginContainer {
+    text-align: center;
+
+    border-radius: 15px ;
+    background-color: rgba(243, 240, 255, 1);
+    box-shadow: 10px 10px rgb(215, 211, 226);
+
+}
+#entireContainer{
+    padding-top:2em;
+}
+input {
+    border-radius: 15px;
+}
+input, label, #submitButton {
+    border:none;
+    font-size: 1.5em;
+}

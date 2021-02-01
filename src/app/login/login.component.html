@@ -1,24 +1,89 @@
-<div class="loginDiv">
-    <div class='form-group'>
-      <form class='form-control'>
-        <h2>Login</h2>
-        <label for='username'>Username:</label>
-        <input  id='username' type='text' name='username' placeholder='Username'>
-        <br/>
-        <br/>
-        <label for='password'>Password:</label>
-        <input  id='password' type='password' name='password' placeholder='Password'>
-        <br/>
-        <br/>
-        <button type='button' class='btn' name="login" >LOGIN</button>
-        <br>
-        <br/>
-        <button type='button' class='btn btn-default' name="toRegister">Register a new account</button>
-      </form>
+<div class="row" id="entireContainer">
+  <div class="col-4"></div>
+  <div class="col-4" id="loginParentContaier">
+    <div class="loginContainer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Login</h2>
+            <br>
+            <div class="form-group">
+              <div class="form-control">
+                
+                <label for="username">Username:</label>
+                <input id="username" placeholder="Username">
+                <br>
+                <label for="password">Password:</label>
+                <input id="password" placeholder="Password">
+                <br>
+                <input id="submitButton" type="submit" value="login">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h5>Need help logging in?</h5>
+      <a routerLink="credentialsHelp">Change Username or Password</a>
+      <div class="container">
+        <hr>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="createUserAccountLink">
+              <h4>Don't Have an Account?</h4>
+              <a routerLink="create-user-account">Click Here to Create an Account</a>
+            </div>
+          </div>
+        </div>
     </div>
-    <hr>
-    <div class="container">
-        <h2>Don't Hava an account?</h2>
-        <a href=
-    </div>
+    <p>
+      By clicking here you agree to our terms and conditions.
+    </p>
+    <br>
+  </div>
+ 
 </div>
+<!-- <div class="loginDiv">
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <form class="form-control">
+          <h2>Login</h2>
+          <label for="username">Username:</label>
+          <input
+            id="username"
+            type="text"
+            name="username"
+            placeholder="Username"
+          />
+          <br />
+          <br />
+          <label for="password">Password:</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <br />
+          <button type="button" class="btn" name="login">LOGIN</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="row">
+  <div class="col">
+    <h3>Don't Have an account?</h3>
+    <a routerLink="/create-user-account"
+      >Click here to create an account with MMDBank</a>
+  </div>
+</div> -->
