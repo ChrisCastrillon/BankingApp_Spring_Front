@@ -9,7 +9,9 @@ import { CreateUserAccountComponent } from './create-user-account/create-user-ac
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
-
+import { UserHomeComponent } from './user-home/user-home.component';
+import { FinanceManagerPortalComponent } from './finance-manager-portal/finance-manager-portal.component';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,14 @@ import { ServicesComponent } from './services/services.component';
     AboutComponent,
     ProductsComponent,
     ServicesComponent,
+    UserHomeComponent,
+    FinanceManagerPortalComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

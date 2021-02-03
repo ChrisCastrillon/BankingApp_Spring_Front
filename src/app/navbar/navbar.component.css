@@ -7,5 +7,18 @@
     padding-bottom: 2em;
 }
 a {
-    padding-left: 2em;
+   
+    margin: 2em;
+    font-size: 1em;
+    background-color: rgba(243, 240, 255, 1);
+    box-shadow: 10px 10px rgb(215, 211, 226);
+    padding-left:2em;
+    padding-right:2em;
+    border-radius: 15px;
+    padding-bottom:.3em;
+    padding-top:.1em;
+    text-decoration: none;
+}
+a:hover {
+    background-color: rgb(215, 211, 226);
 }

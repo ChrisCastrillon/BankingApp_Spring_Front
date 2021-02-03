@@ -1,0 +1,47 @@
+#createAccountSubmit {
+ 
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgba(243, 240, 255, 1);
+    box-shadow: 10px 10px rgb(215, 211, 226);
+    color:#007BFF ;
+
+}
+#createAccountSubmit:hover {
+    background-color: rgb(215, 211, 226);
+}
+.form-control {
+    border:none;
+    background-color: rgba(243, 240, 255, 0);
+}
+#createAccountContainer {
+    text-align: center;
+    padding-top: 2em;
+    border-radius: 15px;
+    background-color: rgba(243, 240, 255, 1);
+    box-shadow: 10px 10px rgb(215, 211, 226);
+    height: 25em;
+}
+input {
+    border-radius:15px;
+}
+input, label, #createAccountSubmit {
+    border:none;
+    font-size: 1.5em;
+}
+a {
+    margin: 2em;
+    font-size: 1.5em;
+    background-color: rgba(243, 240, 255, 1);
+    box-shadow: 10px 10px rgb(215, 211, 226);
+    padding-left:2em;
+    padding-right:2em;
+    border-radius: 15px;
+    padding-bottom:.3em;
+    padding-top:.1em;
+}
+a:hover{
+    background-color: rgb(215, 211, 226);
+    text-decoration: none;
+
+}
