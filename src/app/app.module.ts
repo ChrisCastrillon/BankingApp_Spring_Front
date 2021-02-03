@@ -12,6 +12,9 @@ import { ServicesComponent } from './services/services.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 import { FinanceManagerPortalComponent } from './finance-manager-portal/finance-manager-portal.component';
 import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { ManageTransfersComponent } from './manage-transfers/manage-transfers.component';
+import { ManageOpenAccountsComponent } from './manage-open-accounts/manage-open-accounts.component';
+import { ApplyForNewAccountComponent } from './apply-for-new-account/apply-for-new-account.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
     ServicesComponent,
     UserHomeComponent,
     FinanceManagerPortalComponent,
+    ManageTransfersComponent,
+    ManageOpenAccountsComponent,
+    ApplyForNewAccountComponent,
 
   ],
   imports: [

@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  user = new User();
+  private user = new User();
 
 
 
@@ -38,12 +38,13 @@ export class LoginComponent implements OnInit {
         sessionStorage.setItem('currentUser', JSON.stringify(this.user));
         alert(data.userRole);
         
-        if (this.user.role = "Finance Manager") {
-          this.router.navigateByUrl("/finance-manager-portal");
-        }
-        else {
-          this.router.navigateByUrl("/user-home");
-        }
+        this.router.navigateByUrl("/user-home");
+        // if (this.user.role = "Finance Manager") {
+        //   this.router.navigateByUrl("/finance-manager-portal");
+        // }
+        // else {
+        //   this.router.navigateByUrl("/user-home");
+        // }
       })
     }catch(e){
       console.log(e);
