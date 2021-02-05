@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   private user = new User();
+  username:string;
+  password:string;
 
 
 
@@ -22,8 +24,8 @@ export class LoginComponent implements OnInit {
   loginToApp() {
     
     let lt = new LoginTemplate();
-    lt.username = "cc3988";
-    lt.password = "password"
+    lt.username = this.username;
+    lt.password = this.password;
     alert(JSON.stringify(lt))
     try{
       this.service.sendLogin(lt).subscribe(data => {

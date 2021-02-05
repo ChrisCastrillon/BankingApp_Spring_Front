@@ -15,6 +15,7 @@ import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { ManageTransfersComponent } from './manage-transfers/manage-transfers.component';
 import { ManageOpenAccountsComponent } from './manage-open-accounts/manage-open-accounts.component';
 import { ApplyForNewAccountComponent } from './apply-for-new-account/apply-for-new-account.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ApplyForNewAccountComponent } from './apply-for-new-account/apply-for-n
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

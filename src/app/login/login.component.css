@@ -5,12 +5,12 @@
 
     padding-left: 1em;
     padding-right: 1em;
-    background-color: rgba(243, 240, 255, 1);
+    background-color: rgb(222, 158, 235);
     box-shadow: 10px 10px rgb(215, 211, 226);
     color:#007BFF ;
 }
 #submitButton:hover {
-    background-color: rgb(215, 211, 226);
+    background-color: rgb(226, 211, 217);
 }
 .form-control {
     border:none;
