@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   constructor(private service: UserServiceService, private router: Router) {
 
   }
-
+  //this can be in a service (?)
   loginToApp() {
     
     let lt = new LoginTemplate();
@@ -28,14 +28,6 @@ export class LoginComponent implements OnInit {
     alert(JSON.stringify(lt))
     try{
       this.service.sendLogin(lt).subscribe(data => {
-        // console.log("the data is : " + data)
-        // this.user.userId = data.userID;
-        // this.user.role = data.userRole;
-        // this.user.firstname = data.firstname;
-        // this.user.lastname = data.lastname;
-        // this.user.username = data.username;
-        // this.user.password = data.password;
-        // this.user.email = data.email;
         this.data = data;
         sessionStorage.setItem('currentUser', JSON.stringify(this.data));
       })

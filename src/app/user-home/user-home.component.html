@@ -14,7 +14,7 @@
                 </thead>
                 <tbody>
                     <tr *ngFor="let item of dataArray">
-                        <td>{{ item.accountNumber}}</td>
+                        <td>{{item.accountNumber}}</td>
                         <td>{{item.accountType}}</td>
                         <td>{{item.balance}}</td>
                         <td><button class="btn btn-default">view</button></td>
@@ -25,7 +25,7 @@
         <div class="col" id="accountActionsColumn">
             <h2>Actions</h2>
             <hr>
-            <a routerLink="/manage-transfers">Make a Tansfer</a>
+            <a routerLink="/make-a-transfer">Make a Tansfer</a>
             <br>
             <a routerLink="/manage-open-accounts">Manage Bank Accounts</a>
             <br>
