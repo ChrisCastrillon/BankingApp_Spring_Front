@@ -8,6 +8,7 @@ import { BankAccountServiceService } from '../apiServices/bank-account-service.s
 })
 export class UserHomeComponent implements OnInit {
 
+  currentUser;
   dataArray = [];
   constructor(private service: BankAccountServiceService) {
 
@@ -16,10 +17,10 @@ export class UserHomeComponent implements OnInit {
 
   public getAllAccounts() {
     //you need to get the id from the session storage
-    let u = JSON.parse(sessionStorage.getItem('currentUser'));
     try {
-      this.service.getAllAccountsForUser("1").subscribe((res: any[]) =>
-        {
+      this.service.getAllAccountsForUser(this.currentUser.userId).subscribe((res: any[]) =>
+        
+      {
           this.dataArray = res;
           console.log(this.dataArray[0]);
         })
@@ -29,9 +30,8 @@ export class UserHomeComponent implements OnInit {
     }
     
   }
- 
-
   ngOnInit(): void {
+    this.currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
     this.getAllAccounts();
   }
 
