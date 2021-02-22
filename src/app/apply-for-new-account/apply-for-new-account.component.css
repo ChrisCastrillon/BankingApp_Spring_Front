@@ -1,9 +1,9 @@
 
 #submitButton {
-
+    border-radius: 15px;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: rgba(243, 240, 255, 1);
+    background-color: rgb(222, 158, 235);
     box-shadow: 10px 10px rgb(215, 211, 226);
     color:#007BFF ;
 }
@@ -16,20 +16,28 @@
 }
 #applyForAccountParentContainer {
     text-align: center;
-    border-radius: 15px ;
-    background-color: rgba(243, 240, 255, 1);
-    box-shadow: 10px 10px rgb(215, 211, 226);
+    /* border-radius: 15px ; */
+    /* background-color: rgba(243, 240, 255, 1); */
     height: 30em;
+    margin-top: 15px;
 
 
 }
-#entireContainer{
-    padding-top:2em;
-}
-input {
-    border-radius: 15px;
+.container-fluid{
+    padding-top:.5em;
+    height: 35em;
 }
 input, label, #submitButton {
     border:none;
     font-size: 1.5em;
+}
+input:not(#submitButton) {
+    background-color: rgb(233, 233, 233);
+    border-radius:5px;
+    width: 80%;
+}
+#moreInfo{
+    text-align: center;
+
+    background-color: gray;
 }

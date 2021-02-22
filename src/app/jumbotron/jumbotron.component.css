@@ -1,0 +1,23 @@
+.jumbotron {
+    text-align: center;
+    background-color: rgba(243, 240, 255, 1);
+    /* background-color: rgb(219, 179, 255); */
+    height: 11em;
+    width: 100%;
+ }
+ 
+ a{
+     font-size: 1.2em;
+     margin:20px;
+     color:black;
+     text-decoration: none;
+ }
+ a:hover{
+     color: rgb(222, 158, 235);
+ }
+ img{
+     float:left;
+     position: relative;
+     top:-65px;
+    
+ }

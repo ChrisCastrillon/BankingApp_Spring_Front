@@ -17,6 +17,9 @@ import { ManageOpenAccountsComponent } from './manage-open-accounts/manage-open-
 import { ApplyForNewAccountComponent } from './apply-for-new-account/apply-for-new-account.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { SocialMediaComponent } from './social-media/social-media.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     ManageTransfersComponent,
     ManageOpenAccountsComponent,
     ApplyForNewAccountComponent,
+    FooterComponent,
+    JumbotronComponent,
+    SocialMediaComponent,
 
   ],
   imports: [

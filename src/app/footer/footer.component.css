@@ -1,0 +1,17 @@
+footer{
+    /* position:absolute;
+    bottom:0;
+    width:100%;
+    padding: 25px;
+    background-image: linear-gradient( rgb( 72, 76, 86), rgb(185, 185, 186));
+    margin-top: auto;
+    flex: 0 0 50px */
+    
+    position: relative;
+  margin-top: -180px;
+  /* negative value of footer height */
+  height: 180px;
+  clear: both;
+  /* background-color: rgb(79, 79, 79); */
+  background-image: linear-gradient(180deg, rgb(30, 30, 30), rgb(86, 86, 86));
+}

@@ -1,0 +1,19 @@
+.container-fluid {
+    background-color:rgb(201, 176, 255);
+    height: 50em;
+    width:100vw;
+
+}
+
+#liabilityWarning{
+    border:solid;
+    border-color:black;
+    border-width:1px;
+    margin-top:3em;
+
+}
+#socialMedia {
+    color:white;
+    text-align: center;
+    margin-top:3em;
+}

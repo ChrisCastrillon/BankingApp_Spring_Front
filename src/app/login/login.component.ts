@@ -28,26 +28,34 @@ export class LoginComponent implements OnInit {
     alert(JSON.stringify(lt))
     try{
       this.service.sendLogin(lt).subscribe(data => {
-        this.data = data;
-        sessionStorage.setItem('currentUser', JSON.stringify(this.data));
+        this.data = data; 
       })
     }catch(e){
       console.log(e);
       this.failedToLogIn();
     }
-    console.log("the item is : " + sessionStorage.currentUser);
-    this.currentUser = JSON.parse(sessionStorage.currentUser);
-    console.log(this.currentUser.userRole);
+
+    setTimeout(()=> {
+      sessionStorage.setItem('currentUser', JSON.stringify(this.data));
+      console.log("the item is : " + sessionStorage.currentUser);
+      this.currentUser = JSON.parse(sessionStorage.currentUser);
+      console.log(this.currentUser.userRole);
+      alert("The role is: " + this.currentUser.userRole);
+      if (this.currentUser.userRole == "FinanceManager") {
+        this.router.navigateByUrl("/finance-manager-portal");
+      }
+      else {
+        this.router.navigateByUrl("/user-home"); 
+      }
+    },3000);
     
-    if (this.currentUser.userRole = "FinanceManager") {
-      this.router.navigateByUrl("/finance-manager-portal");
-    }
-      this.router.navigateByUrl("/user-home"); 
+  
   }
   failedToLogIn() {
     alert("failed to login");
     document.getElementById('failedToLogin').innerHTML+"Failed To Login";
   }
+  
   ngOnInit(): void {
   }
 

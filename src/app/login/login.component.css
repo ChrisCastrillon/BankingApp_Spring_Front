@@ -1,6 +1,4 @@
-.form-group {
 
-}
 #submitButton {
 
     padding-left: 1em;
@@ -17,15 +15,28 @@
     background-color: rgba(243, 240, 255, 0);
 }
 .loginContainer {
+    padding-top: 10px;
+    height: 30em;
+    position: relative;
+    top:10em;
     text-align: center;
 
     border-radius: 15px ;
-    background-color: rgba(243, 240, 255, 1);
-    box-shadow: 10px 10px rgb(215, 211, 226);
+    /* background-color: rgba(243, 240, 255, 1); */
+    background-color: rgba(255, 255, 255, 0.819);
+    /* box-shadow: 10px 10px rgb(215, 211, 226); */
 
 }
 #entireContainer{
+    height: 50em;
     padding-top:2em;
+    background-image: url("/assets/img/nyc.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size:100em;
+    border-bottom: solid;
+    border-width: 20px;
+    border-color:rgb(239, 239, 239);
 }
 input {
     border-radius: 15px;
