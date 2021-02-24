@@ -23,7 +23,7 @@
 
     border-radius: 15px ;
     /* background-color: rgba(243, 240, 255, 1); */
-    background-color: rgba(255, 255, 255, 0.819);
+    background-color: rgba(255, 255, 255, .95);
     /* box-shadow: 10px 10px rgb(215, 211, 226); */
 
 }
@@ -36,7 +36,8 @@
     background-size:100em;
     border-bottom: solid;
     border-width: 20px;
-    border-color:rgb(239, 239, 239);
+    /* border-color:rgb(239, 239, 239); */
+    border-color:white;
 }
 input {
     border-radius: 15px;

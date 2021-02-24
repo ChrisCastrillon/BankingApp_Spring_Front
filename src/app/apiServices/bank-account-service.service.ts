@@ -13,4 +13,11 @@ export class BankAccountServiceService {
   getAllAccountsForUser(user_id: string): Observable<AccountForUserResponse[]> {
     return this.httpClient.get<AccountForUserResponse[]>(`http://localhost:8091/data/accounts/${user_id}`)
   }
+  transferFunds(fromAccountNumber: number, toAccountNumber:number, transferAmount: number ): Observable<AccountForUserResponse[]>{
+    return this.httpClient.put<AccountForUserResponse[]>('http://localhost:8091/data/accounts/transfer', {
+      "fromAccountNumber": fromAccountNumber,
+      "toAccountNumber":toAccountNumber,
+      "transferAmount":transferAmount
+    })
+  }
 }

@@ -1,32 +1,40 @@
-<div class="container">
+<div class="container" id="superContainer">
+    <p>{{time}}</p>
     <div class="row">
-        <div class="col" id="accountsColumn">
+        <div class="col col-8" id="accountsColumn">
+        
             <h1>Make a Transfer</h1>
             <hr>
-        
-            <form [formGroup]="form" (ngSubmit)="submit()">
+            <div class="container" id="fromAccountSelect">
                 <label for="accounts">From Account: </label>
-                <select formControlName="accounts" id="fromAccounts">
-                    <option *ngFor="let account of accounts" [value]='account.accountNumber'>
-                        {{account.accountNumber}}
+                <select [(ngModel)]="fromAccount" id="fromAccounts" *ngIf = "accounts !== null">
+                    <option *ngFor="let account of accounts" [ngValue]="account">
+                        {{"ACCN: " + account.accountNumber}}
                         {{account.accountType}}
-                        {{account.balance}}
+                        {{account.balance | currency: 'USD'}}
                     </option>
                 </select>
-                <button class="btn btn-default"></button>
-            </form>
-            <form [formGroup]="form" (ngSubmit)="submit()">
+            </div>
+            <div class="container" id="toAccountSelect">
                 <label for="accounts">To Account: </label>
-                <select formControlName="accounts" id="fromAccounts">
-                    <option *ngFor="let account of accounts" [value]='account.accountNumber'>
-                        {{account.accountNumber}}
+                <select [(ngModel)]="toAccount" id="fromAccounts" *ngIf = "accounts !== null">
+                    <option *ngFor="let account of accounts" [ngValue]="account">
+                        {{"ACCN: " + account.accountNumber}}
                         {{account.accountType}}
-                        {{account.balance}}
+                        {{account.balance | currency: 'USD'}}
                     </option>
                 </select>
                 <br>
-                <button class="btn btn-default">Submit</button>
-            </form>
+                <label for="transferAmount">Transfer Amount: </label>
+                <input id="trasferAmount" type="number" [(ngModel)]="transferAmount">
+                <input id="submitButton" type="submit" (click)="submitTransfer(fromAccount, toAccount, transferAmount)">
+            </div>
+            
+        </div>
+        <div class="col col-4" *ngIf="transferAmount" id="summary">
+            <h1>Summary</h1>
+            <p>Transferring {{transferAmount| currency:'USD'}} from Account : {{fromAccount?.accountNumber}} of balance: {{fromAccount?.balance | currency: 'USD'}}</p>
+            <p>To Account: {{toAccount?.accountNumber}} of balance: {{toAccount?.balance | currency : 'USD'}}</p>
         </div>
     </div>
 </div>

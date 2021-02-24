@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jumbotron.component.css']
 })
 export class JumbotronComponent implements OnInit {
+  time = new Date();
 
   constructor() { }
 
   ngOnInit(): void {
+    setInterval(() => {
+      this.time = new Date();
+   }, 1000);
   }
+  
 
 }
