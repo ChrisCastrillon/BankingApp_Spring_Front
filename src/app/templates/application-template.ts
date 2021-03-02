@@ -5,5 +5,5 @@ export class ApplicationTemplate {
     public firstname: string;
     public lastname: string;
     public ssn: number;
-    public email: string;
+    public email: string; 
 }

@@ -5,6 +5,7 @@ import { ApplyForNewAccountComponent } from './apply-for-new-account/apply-for-n
 import { CreateUserAccountComponent } from './create-user-account/create-user-account.component';
 import { FinanceManagerPortalComponent } from './finance-manager-portal/finance-manager-portal.component';
 import { LoginComponent } from './login/login.component';
+import { ManageApplicationsComponent } from './manage-applications/manage-applications.component';
 import { ManageTransfersComponent } from './manage-transfers/manage-transfers.component';
 import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
@@ -19,7 +20,9 @@ const routes: Routes = [
   {path: 'user-home', component: UserHomeComponent},
   {path: 'apply-for-new-account', component: ApplyForNewAccountComponent},
   {path: 'make-a-transfer', component: ManageTransfersComponent},
-  {path: 'finance-manager-portal', component: FinanceManagerPortalComponent}
+  {path: 'finance-manager-portal', component: FinanceManagerPortalComponent},
+  {path: 'manage-applications', component: ManageApplicationsComponent}
+
 ];
 
 @NgModule({

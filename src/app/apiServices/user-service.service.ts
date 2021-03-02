@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {UserLoginResponse} from './payloads/user-login-response';
 import { Observable } from 'rxjs';
 import {LoginTemplate} from 'src/app/templates/login-template'
+import { RegistrationFormTemplate } from '../templates/registration-form-template';
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +17,16 @@ export class UserServiceService {
     return this.httpClient.post<UserLoginResponse>('http://localhost:8091/data/user/login', {
       "username":loginForm.username,
       "password":loginForm.password
+    })
+  }
+
+  submitUserRegistration(userRegistrationForm: RegistrationFormTemplate) : Observable<UserLoginResponse>{
+    return this.httpClient.post<UserLoginResponse>('http://localhost:8091/data/user/register', {
+      "firstname":userRegistrationForm.firstname,
+      "lastname": userRegistrationForm.lastname,
+      "username": userRegistrationForm.username,
+      "password": userRegistrationForm.password,
+      "email": userRegistrationForm.email
     })
   }
 
@@ -35,25 +46,3 @@ export class UserServiceService {
    
   }
 }
-/*  public async login(u: string, p: string): Promise<boolean> {
-    try {
-      const user: Promise<User> = this.http.post<User>(environment.API_URL + '/user/login', {
-        username: u,
-        password: p
-      }, {
-        withCredentials: true
-      }).toPromise();
-      if (user != null) {
-        this.setUser(await user);
-        console.log(this.getUser);
-        console.log(user);
-        sessionStorage.setItem('currentUser', JSON.stringify(user));
-        return true;
-      } else {
-        return false;
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
-  */

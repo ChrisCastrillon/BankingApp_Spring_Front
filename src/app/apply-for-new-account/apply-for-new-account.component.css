@@ -1,4 +1,14 @@
-
+#accountActionsColumn{
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    border:solid;
+    border-width: 4px;
+    height: 48em;
+}
+h2{
+    margin-top:.5em;
+}
 #submitButton {
     border-radius: 15px;
     padding-left: 1em;
@@ -24,8 +34,9 @@
 
 }
 .container-fluid{
-    padding-top:.5em;
-    height: 35em;
+    margin-top:0;
+    height: 48em;
+    width:100%;
 }
 input, label, #submitButton {
     border:none;
@@ -34,7 +45,8 @@ input, label, #submitButton {
 input:not(#submitButton) {
     background-color: rgb(233, 233, 233);
     border-radius:5px;
-    width: 80%;
+    width: 100%;
+    align-items:right;
 }
 #moreInfo{
     text-align: center;

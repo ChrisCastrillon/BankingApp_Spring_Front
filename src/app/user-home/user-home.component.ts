@@ -18,9 +18,7 @@ export class UserHomeComponent implements OnInit {
   public getAllAccounts() {
     //you need to get the id from the session storage
     try {
-      this.service.getAllAccountsForUser(this.currentUser.userId).subscribe((res: any[]) =>
-        
-      {
+      this.service.getAllAccountsForUser(this.currentUser.userId).subscribe((res: any[]) => {
           this.dataArray = res;
           console.log(this.dataArray[0]);
         })

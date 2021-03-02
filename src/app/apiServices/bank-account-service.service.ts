@@ -1,6 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, JsonpInterceptor } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { ApplicationTemplate } from '../templates/application-template';
 import { AccountForUserResponse } from './payloads/account-for-user-response';
 
 @Injectable({
@@ -20,4 +21,5 @@ export class BankAccountServiceService {
       "transferAmount":transferAmount
     })
   }
+
 }

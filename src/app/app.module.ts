@@ -20,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
+import { ManageApplicationsComponent } from './manage-applications/manage-applications.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { SocialMediaComponent } from './social-media/social-media.component';
     FooterComponent,
     JumbotronComponent,
     SocialMediaComponent,
+    ManageApplicationsComponent,
 
   ],
   imports: [
