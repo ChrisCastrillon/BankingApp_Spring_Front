@@ -1,0 +1,40 @@
+<div class="container" id="superContainer">
+    <p>{{time}}</p>
+    <div class="row">
+        <div class="col col-8" id="accountsColumn">
+        
+            <h1>Make a Transfer</h1>
+            <hr>
+            <div class="container" id="fromAccountSelect">
+                <label for="accounts">From Account: </label>
+                <select [(ngModel)]="fromAccount" id="fromAccounts" *ngIf = "accounts !== null">
+                    <option *ngFor="let account of accounts" [ngValue]="account">
+                        {{"ACCN: " + account.accountNumber}}
+                        {{account.accountType}}
+                        {{account.balance | currency: 'USD'}}
+                    </option>
+                </select>
+            </div>
+            <div class="container" id="toAccountSelect">
+                <label for="accounts">To Account: </label>
+                <select [(ngModel)]="toAccount" id="fromAccounts" *ngIf = "accounts !== null">
+                    <option *ngFor="let account of accounts" [ngValue]="account">
+                        {{"ACCN: " + account.accountNumber}}
+                        {{account.accountType}}
+                        {{account.balance | currency: 'USD'}}
+                    </option>
+                </select>
+                <br>
+                <label for="transferAmount">Transfer Amount: </label>
+                <input id="trasferAmount" type="number" [(ngModel)]="transferAmount">
+                <input id="submitButton" type="submit" (click)="submitTransfer(fromAccount, toAccount, transferAmount)">
+            </div>
+            
+        </div>
+        <div class="col col-4" *ngIf="transferAmount" id="summary">
+            <h1>Summary</h1>
+            <p>Transferring {{transferAmount| currency:'USD'}} from Account : {{fromAccount?.accountNumber}} of balance: {{fromAccount?.balance | currency: 'USD'}}</p>
+            <p>To Account: {{toAccount?.accountNumber}} of balance: {{toAccount?.balance | currency : 'USD'}}</p>
+        </div>
+    </div>
+</div>

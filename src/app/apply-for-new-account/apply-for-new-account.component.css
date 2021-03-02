@@ -1,0 +1,55 @@
+#accountActionsColumn{
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    border:solid;
+    border-width: 4px;
+    height: 48em;
+}
+h2{
+    margin-top:.5em;
+}
+#submitButton {
+    border-radius: 15px;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgb(222, 158, 235);
+    box-shadow: 10px 10px rgb(215, 211, 226);
+    color:#007BFF ;
+}
+#submitButton:hover {
+    background-color: rgb(215, 211, 226);
+}
+.form-control {
+    border:none;
+    background-color: rgba(243, 240, 255, 0);
+}
+#applyForAccountParentContainer {
+    text-align: center;
+    /* border-radius: 15px ; */
+    /* background-color: rgba(243, 240, 255, 1); */
+    height: 30em;
+    margin-top: 15px;
+
+
+}
+.container-fluid{
+    margin-top:0;
+    height: 48em;
+    width:100%;
+}
+input, label, #submitButton {
+    border:none;
+    font-size: 1.5em;
+}
+input:not(#submitButton) {
+    background-color: rgb(233, 233, 233);
+    border-radius:5px;
+    width: 100%;
+    align-items:right;
+}
+#moreInfo{
+    text-align: center;
+
+    background-color: gray;
+}

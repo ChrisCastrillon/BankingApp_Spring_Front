@@ -1,0 +1,65 @@
+
+.container-fluid {
+    height: 35em;
+    font-size: 1.2em;
+
+    border-width:1px;
+    border-color: rgb(204, 204, 204);
+}
+table, td, tr, th {
+    border:solid;
+    border-width:1px;
+    border-color: rgb(233, 233, 233);
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.accountsTable {
+    width: 100%;
+}
+/*
+.accountsTable {
+    border-top: none;
+    border-style:solid;
+    border-collapse: separate;
+    border-width:2px;
+    border-color: rgb(218, 218, 218);
+    background-color: white;
+    font-size: 1.1em;
+    padding: .2em;
+
+}
+
+td, th {
+    border-left:solid rgb(218, 218, 218) 1px;
+    border-top:solid rgb(218, 218, 218) 1px;
+}
+td:first-child, th:first-child {
+    border-left: none;
+}
+*/
+#accountsColumn, #accountActionsColumn{
+    text-align: center;
+    margin-top:2em;
+    padding-bottom:2em;
+}
+
+button {
+    background-color: thistle;
+}
+button:hover {
+    background-color: #007BFF;
+}
+a {
+    color:black;
+    font-size: 1.5em;
+    padding-left:2em;
+    padding-right:2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+
+}
+a:hover {
+    color:  rgb(222, 158, 235);
+}
