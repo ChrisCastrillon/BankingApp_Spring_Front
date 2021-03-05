@@ -1,6 +1,17 @@
 <div class="container">
     <div class="row">
         <div class="col">
+            <nav>
+                    <a href="/manage-accounts">Manage Accounts</a>
+
+                    <a href="/manage-user-accounts">Manage User Accounts</a>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
             <table>
                 <thead>
                     <th>First Name</th>
@@ -9,7 +20,8 @@
                     <th>Job Title</th>
                     <th>Salary</th>
                     <th>Email</th>
-                    <th>Account Type</th>     
+                    <th>Account Type</th>
+                    <th>Application Status</th>     
                 </thead>
                 <tbody>
                     <tr *ngFor="let application of applications">
@@ -35,11 +47,7 @@
                             {{application.accountType}}
                         </td>
                         <td>
-                            <select>
-                                <option>Pending</option>
-                                <option>Reject</option>
-                                <option>Approve</option>
-                            </select>
+                            {{application.status}}
                         </td>
                     </tr>
                 </tbody>

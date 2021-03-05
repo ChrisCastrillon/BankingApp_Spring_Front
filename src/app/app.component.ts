@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BankingApp-Spring-Front';
+  hide: boolean
+
+  ngOnInit(){
+    this.hide=true;
+    console.log('this',this.constructor.name);
+  }
+
 }

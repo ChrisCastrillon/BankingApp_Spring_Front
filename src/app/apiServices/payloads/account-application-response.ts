@@ -7,4 +7,5 @@ export interface AccountApplicationResponse {
     jobTitle:string;
     email:string;
     user: User;
+    status:string;
 }

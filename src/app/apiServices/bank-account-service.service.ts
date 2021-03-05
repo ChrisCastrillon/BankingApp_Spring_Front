@@ -20,6 +20,6 @@ export class BankAccountServiceService {
       "toAccountNumber":toAccountNumber,
       "transferAmount":transferAmount
     })
-  }
+  } 
 
 }

@@ -17,8 +17,16 @@ export class ManageApplicationsComponent implements OnInit {
       console.log("the appications are: " + JSON.stringify(this.applications));
     })
   }
+  printApp(row) {
+    console.log(row);
+  }
   ngOnInit(): void {
     this.getAllApplications();
   }
   applications:AccountApplicationResponse[];
+  selectedApplication:AccountApplicationResponse;
+  index: number;
+
+
+
 }

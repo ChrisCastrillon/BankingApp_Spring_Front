@@ -2,10 +2,68 @@
     <div class="row">
         <div class="col">
             <nav>
-                <a href="/manage-applications">Manage Applications</a>
-                <a href="/manage-accounts">Manage Accounts</a>
-                <a href="/manage-user-accounts">Manage User Accounts</a>
+
+                    <a href="/manage-applications">Manage Applications</a>
+
+                    <a href="/manage-accounts">Manage Accounts</a>
+
+                    <a href="/manage-user-accounts">Manage User Accounts</a>
             </nav>
         </div>
     </div>
 </div>
+
+<!-- Hide this unless you are at this-->
+
+<!-- <div class="container" *ngIf="">
+    <div class="row">
+        Manage Applications
+        <div class="container">
+            <table>
+                <thead>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>SSN</th>
+                    <th>Job Title</th>
+                    <th>Salary</th>
+                    <th>Email</th>
+                    <th>Account Type</th>     
+                </thead>
+                <tbody>
+                    <tr *ngFor="let application of applications">
+                        <td>
+                            {{application.firstname}}
+                        </td>
+                        <td>
+                            {{application.lastname}}
+                        </td>
+                        <td>
+                            {{application.ssn}}
+                        </td>
+                        <td>
+                            {{application.jobTitle}}
+                        </td>
+                        <td>
+                            {{application.income}}
+                        </td>
+                        <td>
+                            {{application.email}}
+                        </td>
+                        <td>
+                            {{application.accountType}}
+                        </td>
+                        <td>
+                            <select>
+                                <option>Pending</option>
+                                <option>Reject</option>
+                                <option>Approve</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+ -->
