@@ -11,6 +11,8 @@ export class ManageApplicationsComponent implements OnInit {
 
   constructor(private applicationService:ApplicationServiceService) { }
 
+
+
   getAllApplications() {
     this.applicationService.getAllApplications().subscribe((data:AccountApplicationResponse[])=>{
       this.applications = data;
@@ -26,7 +28,8 @@ export class ManageApplicationsComponent implements OnInit {
   applications:AccountApplicationResponse[];
   selectedApplication:AccountApplicationResponse;
   index: number;
-
-
+  displayedColumns: string[] =['firstName', 'lastName', 'ssn', 'jobTitle', 'salary', 'email', 'accountType', 'status'];
+  
+  
 
 }

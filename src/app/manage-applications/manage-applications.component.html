@@ -1,15 +1,44 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <nav>
-                    <a href="/manage-accounts">Manage Accounts</a>
+<div class="container mat-elevation-z8">
+            <mat-table [dataSource]="applications">
+                <ng-container matColumnDef="firstName">
+                    <th *matHeaderCellDef>First Name</th>
+                    <td *matCellDef="let app">{{app.firstname}}</td>
+                </ng-container>
+                <ng-container matColumnDef="lastName">
+                    <th *matHeaderCellDef>Last Name</th>
+                    <td *matCellDef="let app">{{app.lastname}}</td>
+                </ng-container>
+                <ng-container matColumnDef="ssn">
+                    <th *matHeaderCellDef>SSN#</th>
+                    <td *matCellDef="let app">{{app.ssn}}</td>
+                </ng-container>
+                <ng-container matColumnDef="jobTitle">
+                    <th *matHeaderCellDef>Job Title</th>
+                    <td *matCellDef="let app">{{app.jobTitle}}</td>
+                </ng-container>
+                <ng-container matColumnDef="salary">
+                    <th *matHeaderCellDef>Salary</th>
+                    <td *matCellDef="let app">{{app.salary}}</td>
+                </ng-container>
+                <ng-container matColumnDef="email">
+                    <th *matHeaderCellDef>Email</th>
+                    <td *matCellDef="let app">{{app.email}}</td>
+                </ng-container>
+                <ng-container matColumnDef="accountType">
+                    <th *matHeaderCellDef>Account Type</th>
+                    <td *matCellDef="let app">{{app.accountType}}</td>
+                </ng-container>
+                <ng-container matColumnDef="status">
+                    <th *matHeaderCellDef>Status</th>
+                    <td *matCellDef="let app">{{app.status}}</td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef ="let row; columns: displayedColumns;"></tr>
 
-                    <a href="/manage-user-accounts">Manage User Accounts</a>
-            </nav>
-        </div>
-    </div>
+            </mat-table>
+
 </div>
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col">
             <table>
@@ -54,4 +83,4 @@
             </table>
         </div>
     </div>
-</div>
+</div> -->

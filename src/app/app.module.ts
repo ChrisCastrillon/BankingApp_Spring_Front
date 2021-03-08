@@ -22,6 +22,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { ManageApplicationsComponent } from './manage-applications/manage-applications.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
