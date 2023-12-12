@@ -23,6 +23,8 @@ import { SocialMediaComponent } from './social-media/social-media.component';
 import { ManageApplicationsComponent } from './manage-applications/manage-applications.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule} from '@angular/material/table';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -43,6 +45,10 @@ import { MatTableModule} from '@angular/material/table';
     SocialMediaComponent,
     ManageApplicationsComponent,
 
+
+    
+
+
   ],
   imports: [
     BrowserModule,
@@ -51,7 +57,8 @@ import { MatTableModule} from '@angular/material/table';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,7 +12,9 @@ export class ManageApplicationsComponent implements OnInit {
   constructor(private applicationService:ApplicationServiceService) { }
 
 
-
+  onRowClicked(row) {
+    console.log(row);
+  }
   getAllApplications() {
     this.applicationService.getAllApplications().subscribe((data:AccountApplicationResponse[])=>{
       this.applications = data;

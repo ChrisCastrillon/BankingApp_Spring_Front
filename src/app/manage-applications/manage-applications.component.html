@@ -1,5 +1,5 @@
-<div class="container mat-elevation-z8">
-            <mat-table [dataSource]="applications">
+<div class="container mat-elevation-z10" id="mainContainer">
+            <mat-table [dataSource]="applications" id="applicationTable">
                 <ng-container matColumnDef="firstName">
                     <th *matHeaderCellDef>First Name</th>
                     <td *matCellDef="let app">{{app.firstname}}</td>
@@ -33,54 +33,15 @@
                     <td *matCellDef="let app">{{app.status}}</td>
                 </ng-container>
                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr mat-row *matRowDef ="let row; columns: displayedColumns;"></tr>
+                <tr mat-row (click)="onRowClicked(row)"*matRowDef ="let row; columns: displayedColumns;"></tr>
 
             </mat-table>
 
 </div>
-<!-- <div class="container">
-    <div class="row">
-        <div class="col">
-            <table>
-                <thead>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>SSN</th>
-                    <th>Job Title</th>
-                    <th>Salary</th>
-                    <th>Email</th>
-                    <th>Account Type</th>
-                    <th>Application Status</th>     
-                </thead>
-                <tbody>
-                    <tr *ngFor="let application of applications">
-                        <td>
-                            {{application.firstname}}
-                        </td>
-                        <td>
-                            {{application.lastname}}
-                        </td>
-                        <td>
-                            {{application.ssn}}
-                        </td>
-                        <td>
-                            {{application.jobTitle}}
-                        </td>
-                        <td>
-                            {{application.income}}
-                        </td>
-                        <td>
-                            {{application.email}}
-                        </td>
-                        <td>
-                            {{application.accountType}}
-                        </td>
-                        <td>
-                            {{application.status}}
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">
+            Alter Status:
+        </h4>
     </div>
-</div> -->
+</ng-template>

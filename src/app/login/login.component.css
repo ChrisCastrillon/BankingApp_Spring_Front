@@ -16,7 +16,7 @@
 }
 .loginContainer {
     padding-top: 10px;
-    height: 30em;
+    height: inherit;
     position: relative;
     top:10em;
     text-align: center;
@@ -41,6 +41,9 @@
 }
 input {
     border-radius: 15px;
+}
+input {
+    min-width: inherit;
 }
 input, label, #submitButton {
     border:none;

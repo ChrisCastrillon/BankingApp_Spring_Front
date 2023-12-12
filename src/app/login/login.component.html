@@ -1,50 +1,56 @@
-<div class="row" id="entireContainer">
-  <div class="col-4"></div>
-  <div class="col-4" id="loginParentContaier">
-    <div class="loginContainer">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2>Login</h2>
-            <br>
-            <div class="form-group">
-              <div class="form-control">
-                
-                <label for="username">Username:</label>
-                <input id="username" type="text" [(ngModel)]="username">
-                <br>
-                <label for="password">Password:</label>
-                <input id="password" type="password"[(ngModel)]="password">
-                <br>
-                <input id="submitButton" type="submit" value="login" (click)="loginToApp()">
+<div class="container-flex" >
+  <div class="row" id="entireContainer">
+    <div class="col-4"></div>
+    <div class="col-4" id="loginParentContaier">
+      <div class="loginContainer">
+        <div class="container-flex">
+          <div class="row">
+            <div class="col">
+              <h2>Login</h2>
+              <br>
+              <div class="form-group">
+                <div class="form-control">
+                  
+                  <label for="username">Username:</label>
+                  <input id="username" type="text" [(ngModel)]="username">
+                  <br>
+                  <label for="password">Password:</label>
+                  <input id="password" type="password"[(ngModel)]="password">
+                  <br>
+                  <input id="submitButton" type="submit" value="login" (click)="loginToApp()">
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <h5>Need help logging in?</h5>
-      <a routerLink="credentialsHelp">Change Username or Password</a>
-      <div class="container">
-        <hr>
-      </div>
-      <br>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="createUserAccountLink">
-              <h4>Don't Have an Account?</h4>
-              <a routerLink="create-user-account">Click Here to Create an Account</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h5>Need help logging in?</h5>
+        <a routerLink="credentialsHelp">Change Username or Password</a>
+        <div class="container">
+          <hr>
+        </div>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="createUserAccountLink">
+                <h4>Don't Have an Account?</h4>
+                <a routerLink="create-user-account">Click Here to Create an Account</a>
+              </div>
             </div>
           </div>
-        </div>
+      </div>
+      <p>
+        By clicking here you agree to our terms and conditions.
+      </p>
+      <br>
     </div>
-    <p>
-      By clicking here you agree to our terms and conditions.
-    </p>
-    <br>
   </div>
+  
 </div>

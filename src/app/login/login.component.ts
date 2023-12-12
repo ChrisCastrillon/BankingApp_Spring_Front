@@ -30,6 +30,7 @@ export class LoginComponent implements OnInit {
       this.service.sendLogin(lt).subscribe(data => {
         this.data = data; 
       })
+      console.log("this dataaaaaaaaaa", this.data);
     }catch(e){
       console.log(e);
       this.failedToLogIn();

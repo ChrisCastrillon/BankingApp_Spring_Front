@@ -14,7 +14,7 @@ export class UserServiceService {
   }
   //send a post request to the login controller
   sendLogin(loginForm:LoginTemplate): Observable<UserLoginResponse> {
-    return this.httpClient.post<UserLoginResponse>('http://localhost:8091/data/user/login', {
+    return this.httpClient.post<UserLoginResponse>('http://localhost:8080/user/login', {
       "username":loginForm.username,
       "password":loginForm.password
     })

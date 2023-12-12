@@ -1,11 +1,22 @@
 
-tr:hover {
+tr:hover :not(th) {
     background-color:rgb(228, 236, 255);
 }
 
-
+th {
+    padding-top:10px;
+}
 td, th {
-
-    padding: 10px;
     font-size: 1.3em;
+}
+
+
+
+#applicationTable {
+    background-color:white;
+    height: 75%;
+
+}
+#mainContainer {
+    height: 58%;
 }
